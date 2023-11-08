@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs230gamewithjavafx.PlayerProfileController">
+   <top>
+      <Label alignment="CENTER" text="Player Profile" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+<center>
+   <TilePane>
+
+      <Label text="Choose a Profile to delete: "/>
+      <ChoiceBox fx:id="deletePP" />
+      <Button fx:id="backButton" onAction="#handleBackButtonAction" text="Back"/>
+
+   </TilePane>
+</center>
+</BorderPane>

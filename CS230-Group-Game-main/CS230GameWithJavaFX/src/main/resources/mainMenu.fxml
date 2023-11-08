@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="550.0" prefWidth="1000.0" type="SplitPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs230gamewithjavafx.MenuController">
+    <items>
+        <BorderPane fx:id="menuPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="178.0" prefWidth="599.0" style="-fx-background-color: #3489eb;">
+            <top>
+                <Label text="JFX Exception: Theme Not Found" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </top>
+            <effect>
+                <ColorAdjust />
+            </effect>
+         <left>
+            <TilePane alignment="TOP_CENTER" orientation="VERTICAL" prefColumns="1" prefHeight="200.0" prefRows="6" prefTileHeight="30.0" prefTileWidth="150.0" prefWidth="200.0" translateY="30.0" vgap="15.0" BorderPane.alignment="CENTER">
+               <children>
+                        <!-- <Button fx:id="playButton" alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handlePlayButtonAction" prefHeight="18.0" prefWidth="96.0" scaleX="1.3" scaleY="1.3" text="PLAY">
+                            <font>
+                                      <Font size="15.0" />
+                                  </font>
+                              </Button> -->
+                   <Label text="Load or Create Profile: " />
+                        <ComboBox fx:id="chooseOrAddPP" promptText="Profile" />
+                       <!-- <Button fx:id="playerProfileButton" alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E3" mnemonicParsing="false" onAction="#handlePlayerProfileButtonAction" prefHeight="33.0" prefWidth="158.0" scaleX="1.3" scaleY="1.3" text="MANAGE PROFILE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button> -->
+                        <Label text="Delete Profiles: " />
+                        <ChoiceBox fx:id="deletePP" />
+                        <Button fx:id="highScoreButton" alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E3" mnemonicParsing="false" onAction="#handleHighScoreButtonAction" prefHeight="6.0" prefWidth="154.0" scaleX="1.3" scaleY="1.3" text="VIEW HIGHSCORES">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="quitButton" alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E3" mnemonicParsing="false" onAction="#handleQuitButtonAction" prefHeight="0.0" prefWidth="148.0" scaleX="1.3" scaleY="1.3" text="QUIT">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+               </children>
+            </TilePane>
+         </left>
+         <center>
+            <TilePane hgap="200.0" prefColumns="3" prefHeight="200.0" prefTileHeight="5.0" prefTileWidth="4.0" prefWidth="200.0" scaleX="0.9" vgap="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="level1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" smooth="false" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level1.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="level2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level2.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="level3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level3.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="level4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level4.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="level5" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="level6" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level6.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="level7" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@levelThumbnails/level7.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="level8" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                   <image>
+                       <Image url="@levelThumbnails/level8.jpg" />
+                   </image>
+                  </ImageView>
+                  <ImageView fx:id="level9" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                      <image>
+                          <Image url="@levelThumbnails/level9.jpg" />
+                      </image>
+                  </ImageView>
+                  <ImageView fx:id="level10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleChooseLevel" pickOnBounds="true" preserveRatio="true" TilePane.alignment="TOP_LEFT">
+                      <image>
+                          <Image url="@levelThumbnails/level10.jpg" />
+                      </image>
+                  </ImageView>
+               </children>
+            </TilePane>
+         </center>
+         <bottom>
+            <Text fx:id="errorText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </bottom>
+        </BorderPane>
+    </items>
+</fx:root>
